@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.164.0/http/server.ts";
-import { createServer } from "ultra/server.ts";
+import { createServer } from "https://raw.githubusercontent.com/exhibitionist-digital/ultra/jit/server.ts";
 import { Router } from "wouter";
 import staticLocationHook from "wouter/static-location";
 import App from "./src/app.tsx";
