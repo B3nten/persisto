@@ -7,11 +7,9 @@ import { SearchParamsProvider } from "./src/context/SearchParams.tsx";
 import { persisto } from "./persisto/server.ts";
 
 const server = await createServer({
-	importMapPath:
-		Deno.env.get("ULTRA_MODE") === "development"
-			? import.meta.resolve("./importMap.dev.json")
-			: import.meta.resolve("./importMap.json"),
+	importMapPath: import.meta.resolve("./importMap.json"),
 	browserEntrypoint: import.meta.resolve("./client.tsx"),
+	mode: "jit"
 });
 
 server.all("*", async (context) => {
