@@ -11,7 +11,7 @@ export default function AboutPage() {
 			use it to hydrate the state.
 			<br />
 			This allows for a seamless experience for the user, and allows for
-			the state to be persisted across page reloads.
+			the state to be persisted across navigations.
 			<br />
 			<br />
 			Try navigating back and forth, and notice that the counter state
